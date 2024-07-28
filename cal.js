@@ -149,3 +149,4 @@ function TheMainFunction() {
     waitForLastRequests();
 
 }
+TheMainFunction();
