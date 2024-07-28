@@ -27,7 +27,7 @@ async function create_and_download_calendar() {
     function begin_ics() {
         ical_lines.push("BEGIN:VCALENDAR");
         ical_lines.push("VERSION:2.0");
-        ical_lines.push("PRODID:-// TIME CREATED - {str(datetime.datetime.today())} //");
+        ical_lines.push("PRODID:-// TIME CREATED - "+new Date()+" //");
     }
     function end_ics() {
         ical_lines.push("END:VCALENDAR");
