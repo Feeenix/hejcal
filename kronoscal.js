@@ -127,7 +127,7 @@ async function create_and_download_calendar() {
 
     function download(filename, text) {
         var element = iframedoc.createElement('a');
-        element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+        element.setAttribute('href', 'data:text/calendar;charset=utf-8,' + encodeURIComponent(text));
         element.setAttribute('download', filename);
 
         element.style.display = 'none';
