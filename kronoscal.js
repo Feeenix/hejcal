@@ -64,7 +64,7 @@ async function create_and_download_calendar() {
 
 
 
-    begin_ics()
+    // begin_ics()
     console.log("creating calendar")
 
     iframedoc.getElementById("employeecalendar.actions.switchViewToWeekly").click()
@@ -121,7 +121,7 @@ async function create_and_download_calendar() {
 
     }
     console.log("forward all the way")
-    end_ics();
+    // end_ics();
 
     let ics_text = ical_lines.join("\n");
 
